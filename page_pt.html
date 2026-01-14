@@ -1,104 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roberto Rosário Balbinotti</title>
+    <title>Roberto Balbinotti | ML Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        a {
-            color: #1a0dab;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Roberto Rosário Balbinotti</h1>
-        <h3>Data Scientist & Analyst</h3>
-        <p><a href="https://linkedin.com/in/roberto-balbinotti"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
-            <a href="https://github.com/rbalbinotti"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
-            <a href="mailto:balbinotti@proton.me"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
-            <a href="https://wa.me/5551920018268"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&amp;logo=whatsapp&amp;logoColor=white" alt="WhatsApp"></a></p>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="gradient-bg text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Roberto Balbinotti</h1>
+            <p class="text-xl md:text-2xl text-blue-300 font-light mb-6">ML Architect & Computer Vision Specialist</p>
+            <p class="italic opacity-90 text-lg">"Transformando Big Data e Visão Computacional em ROI e Eficiência Operacional"</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
         
-        <hr>
-        <h2>Sobre Mim</h2>
-        <p>Sempre tive uma relação próxima com computadores, mas como usuário de software. Acho incrível a criatividade dos criadores de software, apesar de nunca ter tido interesse em me tornar um.</p>
-        <p>Quando tive meu primeiro contato com IA e ML em um site de reconhecimento de imagens, percebi que essa seria a profissão perfeita para mim. Adoro estar em constante aprendizado, o que é ideal para um cientista de dados e analista.</p>
-        <p>Minha jornada na tecnologia envolve descobrir padrões, transformar dados em decisões estratégicas, criar modelos e oferecer soluções diretas e eficazes para problemas complexos.</p>
-        <p>Atualmente morando em Porto Alegre/RS - Brasil</p>
-    
-        <h3>Pós-Graduação</h3>
-        <ul>
-            <li><strong>Visão Computacional</strong> – <a href="https://www.datascienceacademy.com.br/">Data Science Academy</a> (Outubro/2024 - Presente)</li>
-        </ul>
-        
-        <h2>Meus Projetos</h2>
-        <h3><a href="https://github.com/rbalbinotti/treat_cancer_keras">Previsão de Câncer através de Mutações Genéticas</a></h3>
-        <ul>
-            <li><strong>Desafio</strong>: Fazer o tratamento de textos clínicos para prever 9 classes, sem utilizar arquiteturas pagas, dados de treino contêm mais de 3 mil observações, com padding de 49680.</li>
-            <li><strong>Ação</strong>: Utilizei modelo pre-treinado (DistilBertClassifier), criei rede LSTM, técnica de encoding, tokenização, tuning com RandomSearch do keras, balanceamento de classes e treinamento em GPU.</li>
-            <li><strong>Ferramentas</strong>: keras_NLP, keras RandomSearch, TensorFlow, spacy, scikit-learn, python, PCA</li>
-            <li><strong>Resultado</strong>: Modelo de classificação com Keras-NLP utilizando o modelo pré treinado DistilBert se mostrou o mais adequado para aprimoramento.</li>
-        </ul>
-        <h3><a href="https://github.com/rbalbinotti/analise_hospitalar_R">Análise de Dados Hospitalares</a></h3>
-        <ul>
-            <li><strong>Desafio</strong>: Responder perguntas de negócio utilizando dados coletados.</li>
-            <li><strong>Ação</strong>: Utilizei técnicas de análise exploratória e modelos de regressão linear e teste estatístico.</li>
-            <li><strong>Ferramentas</strong>: sqldf, tidyverse</li>
-            <li><strong>Resultado</strong>: Identificadas 3 variáveis mais relevantes para explicar e prever o gasto com internações hospitalares.</li>
-        </ul>
-        <h3><a href="https://github.com/rbalbinotti/Analise_Risco_Transp_Publico">London Bus Safety Analysis</a></h3>
-        <ul>
-            <li><strong>Desafio</strong>: Identificar características de pessoas e locais mais propensos a se envolver em acidentes com ônibus.</li>
-            <li><strong>Ação</strong>: Desenvolvi um <a href="https://londonbusanalysis.streamlit.app/">site</a> com StreamLit onde são feitas analises com os dados coletados.</li>
-            <li><strong>Ferramentas</strong>: Pandas, StreamLit, Vega-Altair, Seaborn</li>
-            <li><strong>Resultado</strong>: Com a interpretação dos gráficos podemos identificar pontos de atenção para campanhas de redução de acidentes envolvendo transporte público.</li>
-        </ul>
-        <h3><a href="https://github.com/rbalbinotti/thai_portfolio">ETL e Análise de Dados Casa de Eventos</a></h3>
-        <ul>
-            <li><strong>Desafio</strong>: Coletar, organizar dados de fontes variadas sem padronização. Fazer área de negócio entender a importância de tomar decisões voltadas a dados.</li>
-            <li><strong>Ação</strong>: Dados foram coletados e processados utilizando linguagem Python e criada apresentação com PowerBI.</li>
-            <li><strong>Ferramentas</strong>: Pandas, Plotly, PowerBI</li>
-            <li><strong>Resultado</strong>: <a href="https://app.powerbi.com/links/W_23bQhW44?ctid=95b5599e-390a-4a3f-89b3-994aea1ad632&pbi_source=linkShare">Dashboard</a> que concentrou os dados em somente um local, organizando e possibilitando uma visão precisa das diretrizes do negócio. Insights para melhoria e ampliação do negócio.</li>
-        </ul>
-        <h3><a href="https://github.com/rbalbinotti/Prevendo_Cons_Energia_Carros">Prevendo o Consumo de Energia de Carros Elétricos</a></h3>
-        <ul>
-            <li><strong>Desafio</strong>: Dados com muitos valores missing, muitas variáveis necessitando tratar e padronizar.</li>
-            <li><strong>Ação</strong>: Utilizei técnicas de tratamento de valores faltantes e pesquisa sobre as características dos veículos para preenchimento dos dados, criei modelos de regressão linear para seleção de variáveis e treinamento, além de modelo Random Forest para treinamento.</li>
-            <li><strong>Ferramentas</strong>: Naniar, visdat, C50, caret, tidyverse</li>
-            <li><strong>Resultado</strong>: Treinado modelo capaz de prever o consumo de energia em carros elétricos.</li>
-        </ul>
-        <h2>Habilidades</h2>
-        <ul>
-            <li><strong>Linguagens</strong>: Python, R, SQL, Julia</li>
-            <li><strong>Ferramentas</strong>: Jupyterlab, Tableau, PowerBI, Scikit-learn, TensorFlow, Hadoop, Spark, Docker</li>
-            <li><strong>Métodos</strong>: Supervisionados (SVM, Linear, Ensambles, Naive Bayes) e Não Supervisionados (Mean shift, K-means, DBSCAN), Redução de dimensionalidade (PCA)</li>
-        </ul>
-        <h2>Contato</h2>
-        <p>Vamos conversar! Estou disponível para novas oportunidades e colaborações.</p>
-        <p><a href="mailto:balbinotti@proton.me"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
-            <a href="https://wa.me/5551920018268"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&amp;logo=whatsapp&amp;logoColor=white" alt="WhatsApp"></a></p>
-    </div>
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">🧬 Sobre Mim</h2>
+            <p class="leading-relaxed mb-4">
+                Especialista em inteligência artificial com foco na intersecção entre <strong>Big Data (Hadoop/Spark)</strong> e <strong>IA Aplicada</strong>. Com pós-graduação em <strong>Visão Computacional</strong>, projeto sistemas ponta-a-ponta que transcendem o ambiente de pesquisa para operar em produção (MLOps).
+            </p>
+            <p class="leading-relaxed">
+                Diferente de abordagens puramente estatísticas, domino o ciclo completo: da ingestão massiva de "dados sujos" ao deploy conteinerizado com <strong>Docker/Podman</strong>.
+            </p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-6">🛠️ Matriz de Competências (Stack 2026)</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg shadow overflow-hidden">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Categoria</th>
+                            <th class="py-3 px-4 text-left">Tecnologias Chave</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">IA & Vision</td>
+                            <td class="py-3 px-4">YOLO, OpenCV, TensorFlow, Keras, Scikit-learn, LightGBM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Big Data</td>
+                            <td class="py-3 px-4">Apache Spark, Hadoop, HBase, Flume, Spark Streaming</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Engenharia/Dev</td>
+                            <td class="py-3 px-4">Python, Docker, Podman, DVC, PDM</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Análise/Stats</td>
+                            <td class="py-3 px-4">Prophet, Regressões, ANOVA, SHAP/LIME</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-8">🏗️ Projetos Estratégicos</h2>
+
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">1. Smart Supply Chain AI: Otimização de Inventário</h3>
+                    <p class="text-gray-600 mb-4 italic">Integração de Visão Computacional e Previsão de Demanda para logística.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Objetivo:</strong> Eliminar rupturas de estoque e otimizar o capital de giro.</li>
+                        <li><strong>Engenharia:</strong> Pipeline modularizado (YOLO/OpenCV) integrado ao Prophet.</li>
+                        <li><strong>Resultado:</strong> <span class="text-green-600 font-bold">Redução de 15% nos custos operacionais.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">2. Digital Twin: Gerador de Dados Sintéticos</h3>
+                    <p class="text-gray-600 mb-4 italic">Motor de alta fidelidade para simulação de cadeias de suprimentos.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Diferencial:</strong> Feature engineering correlacionando severidade climática e demanda.</li>
+                        <li><strong>Metodologia:</strong> Decomposição de Séries Temporais com dados do INMET.</li>
+                        <li><strong>Resultado:</strong> Datasets massivos (100k+ linhas) em formato Parquet.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">3. Personalized Medicine: Diagnóstico via Deep Learning</h3>
+                    <p class="text-gray-600 mb-4 italic">Classificação de mutações genéticas para tratamento oncológico.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Técnica:</strong> Redes Neurais Profundas (Keras/TensorFlow) com AI Explainability.</li>
+                        <li><strong>Rigor:</strong> Implementação de SHAP/LIME para interpretabilidade clínica.</li>
+                        <li><strong>Resultado:</strong> <span class="text-green-600 font-bold">Acurácia superior a 90%</span> na triagem.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">4. Event Analytics & Management Dashboard</h3>
+                    <p class="text-gray-600 mb-4 italic">BI interativo para gestão de eventos e performance financeira.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Stack:</strong> Streamlit, Plotly e arquitetura modular de ETL.</li>
+                        <li><strong>Otimização:</strong> Processamento em memória com cache para grandes volumes.</li>
+                        <li><strong>Resultado:</strong> Visão executiva MoM (Month-over-Month) em tempo real.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center bg-gray-100 p-8 rounded-2xl shadow-inner">
+            <h2 class="text-2xl font-bold mb-6">📬 Vamos conversar?</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://linkedin.com/in/roberto-balbinotti" class="flex items-center bg-[#0077B5] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/rbalbinotti" class="flex items-center bg-[#333] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+                <a href="https://www.kaggle.com/datasets/robertobalbinotti/synthetic-grocery-data" class="flex items-center bg-[#20BEFF] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-kaggle mr-2"></i> Kaggle
+                </a>
+                <a href="mailto:rbalbinotti@gmail.com" class="flex items-center bg-[#D14836] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fas fa-envelope mr-2"></i> Email
+                </a>
+                <a href="https://wa.me/5551920018268" class="flex items-center bg-[#25D366] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        &copy; 2026 Roberto Balbinotti. Todos os direitos reservados.
+    </footer>
+
 </body>
 </html>
-
-
-
-

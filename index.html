@@ -3,51 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Your Language</title>
+    <title>Roberto Balbinotti | Language Selection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-        }
-        .container2 {
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #1a0dab;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
-            background-color: #333;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Roberto Rosário Balbinotti</h1>
-            <h3>Project Portfolio</h3>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+
+    <main class="max-w-md w-full px-6">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+            <header class="gradient-bg text-white py-10 px-6 text-center">
+                <h1 class="text-3xl font-bold mb-2">Roberto Balbinotti</h1>
+                <p class="text-blue-300 font-light uppercase tracking-widest text-sm">Project Portfolio</p>
+            </header>
+
+            <div class="p-8">
+                <h2 class="text-gray-500 text-center text-sm font-medium mb-8 uppercase tracking-tighter">
+                    Escolha seu Idioma • Choose Language • Scegli Lingua
+                </h2>
+                
+                <div class="space-y-4">
+                    <a href="page_pt.html" class="flex items-center justify-between bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300 p-4 rounded-xl transition-all group">
+                        <span class="font-semibold text-gray-700 group-hover:text-blue-700">Português</span>
+                        <i class="fas fa-chevron-right text-gray-300 group-hover:text-blue-400"></i>
+                    </a>
+
+                    <a href="page_en.html" class="flex items-center justify-between bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300 p-4 rounded-xl transition-all group">
+                        <span class="font-semibold text-gray-700 group-hover:text-blue-700">English</span>
+                        <i class="fas fa-chevron-right text-gray-300 group-hover:text-blue-400"></i>
+                    </a>
+
+                    <a href="page_it.html" class="flex items-center justify-between bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-blue-300 p-4 rounded-xl transition-all group">
+                        <span class="font-semibold text-gray-700 group-hover:text-blue-700">Italiano</span>
+                        <i class="fas fa-chevron-right text-gray-300 group-hover:text-blue-400"></i>
+                    </a>
+                </div>
+            </div>
+
+            <footer class="bg-gray-50 py-4 border-t border-gray-100 text-center text-xs text-gray-400">
+                &copy; 2026 Roberto Balbinotti
+            </footer>
         </div>
-        <h5>Escolha seu Idioma / Choose Your Language / Scegli la tua lingua</h5>
-        <a href="page_pt.html">Português</a>
-        <a href="page_en.html">English</a>
-        <a href="page_it.html">Italiano</a>
-    </div>
+    </main>
+
 </body>
 </html>
