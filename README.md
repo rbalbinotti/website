@@ -1,4 +1,4 @@
-# rbalbinotti - Website Pessoal
+# R.R.Balbinotti - Website Pessoal
 
 Este repositório contém o código-fonte do meu website pessoal. O objetivo deste projeto é servir como um portfólio online, centralizando informações sobre minha carreira, projetos, habilidades e formas de contato.
 
@@ -8,7 +8,7 @@ Para rodar o projeto localmente em sua máquina, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/rbalbinotti/website.git](https://github.com/rbalbinotti/website.git)
+    git clone https://github.com/rbalbinotti/website.git
     ```
 
 2.  **Acesse a pasta do projeto:**
