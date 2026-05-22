@@ -38,4 +38,4 @@ Acesse `http://localhost:3000` (ou a porta indicada no terminal) para visualizar
 Este projeto está sob a licença [MIT](./LICENSE). Sinta-se à vontade para usar o código como referência.
 
 ---
-Desenvolvido por [Roberto Balbinotti](https://github.com/rbalbinotti)
+Desenvolvido por [R.R.Balbinotti](https://github.com/rbalbinotti)
