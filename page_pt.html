@@ -1,284 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roberto Balbinotti | AI Solution Architect & Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --accent-color: #0077b5;
-            --border-color: #e1e4e8;
-            --secondary-bg: #f6f8fa;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        h1, h2, h3 {
-            color: #24292e;
-            font-weight: 600;
-            margin-top: 24px;
-            margin-bottom: 16px;
-        }
-
-        h1 { font-size: 2em; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
-        h2 { font-size: 1.5em; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; }
-        h3 { font-size: 1.25em; }
-
-        p { margin-top: 0; margin-bottom: 16px; }
-        em { color: #586069; }
-
-        hr {
-            height: 0.25em;
-            padding: 0;
-            margin: 24px 0;
-            background-color: var(--border-color);
-            border: 0;
-        }
-
-        /* Tabelas */
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin-bottom: 20px;
-            display: block;
-            overflow-x: auto;
-        }
-
-        th, td {
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            text-align: left;
-        }
-
-        th {
-            background-color: var(--secondary-bg);
-            font-weight: 600;
-        }
-
-        td:first-child {
-            font-weight: bold;
-            white-space: nowrap;
-            background-color: #fafbfc;
-        }
-
-        /* Listas e Badges */
-        ul {
-            padding-left: 20px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-
-        li { margin-bottom: 8px; }
-
-        img {
-            vertical-align: middle;
-            margin-right: 4px;
-            margin-bottom: 4px;
-            border-style: none;
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        code {
-            font-family: monospace;
-            background-color: #f6f8fa;
-            color: #0c42a1;
-            padding: 2px 6px;
-            border-radius: 1px;
-            font-weight: 600;
-        }
-
-        .contact-links a {
-            display: inline-block;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-
-        .project-card {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .badge-img { display: inline-block; margin: 2px 4px 2px 0; }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-    <header>
-        <h1>Roberto Balbinotti | AI Solution Architect & Data Scientist</h1>
-        <p><em>Transformando Big Data, Séries Temporais e Visão Computacional em ROI e Eficiência Operacional.</em></p>
+    <header class="gradient-bg text-white py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Roberto Balbinotti</h1>
+            <p class="text-xl md:text-2xl text-blue-300 font-light mb-6">AI Solution Architect & Data Scientist</p>
+            <p class="italic opacity-90 text-lg">"Transformando Big Data, Séries Temporais e Visão Computacional em ROI e Eficiência Operacional."</p>
+        </div>
     </header>
 
-    <hr>
-
-    <section id="about">
-        <h3>🧬 Sobre Mim</h3>
-        <p>Cientista de Dados Sênior e Arquiteto de Soluções de IA com mais de 20 anos de bagagem profissional na intersecção entre otimização de processos, lógica de negócios e sistemas preditivos de alta performance. Especialista no desenvolvimento de pipelines ponta a ponta que transcendem o ambiente de pesquisa laboratorial para operar de forma robusta e escalável em ambientes produtivos (MLOps).</p>
-        <p>Diferente de abordagens puramente teóricas, domino o ciclo completo do dado: desde a ingestão massiva de fontes heterogêneas e otimização server-side até o deploy conteinerizado de redes neurais complexas, sempre focando na eliminação de gargalos analíticos e no retorno financeiro real sobre o projeto.</p>
-    </section>
-
-    <hr>
-
-    <section id="skills">
-        <h3>🛠️ Matriz de Competências (Stack 2026)</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th style="width: 25%;">Categoria</th>
-                    <th>Tecnologias Chave</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>IA &amp; Computação Visual</td>
-                    <td>
-                        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow">
-                        <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white" alt="Keras">
-                        <img src="https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logo=yolo&logoColor=black" alt="YOLO">
-                        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV">
-                        <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Data Performance &amp; Big Data</td>
-                    <td>
-                        <img src="https://img.shields.io/badge/Polars-CD7F32?style=flat-square&logo=polars&logoColor=white" alt="Polars">
-                        <img src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white" alt="Julia Language">
-                        <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark">
-                        <img src="https://img.shields.io/badge/Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=black" alt="Hadoop">
-                        <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Forecasting &amp; Time Series</td>
-                    <td>
-                        <img src="https://img.shields.io/badge/Nixtla-000000?style=flat-square" alt="Nixtla">
-                        <img src="https://img.shields.io/badge/MLForecast-00A86B?style=flat-square" alt="MLForecast">
-                        <img src="https://img.shields.io/badge/Sktime-1f425f?style=flat-square" alt="Sktime">
-                        <img src="https://img.shields.io/badge/LightGBM-333333?style=flat-square" alt="LightGBM">
-                    </td>
-                </tr>
-                <tr>
-                    <td>DevOps, Cloud &amp; MLOps</td>
-                    <td>
-                        <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow">
-                        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-                        <img src="https://img.shields.io/badge/DVC-945DD6?style=flat-square&logo=dvc&logoColor=white" alt="DVC">
-                        <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="AWS">
-                        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux Arch/BigLinux">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <hr>
-
-    <section id="projects">
-        <h2>🏗️ Projetos Estratégicos</h2>
-
-        <article class="project-card">
-            <h3>1. Smart Supply Chain AI: Motor Preditivo de Demanda &amp; Geração Estocástica de Dados</h3>
-            <p><em>Integração de modelagem preditiva de séries temporais de alta performance e engenharia de dados colunares aplicados à cadeia de suprimentos.</em></p>
-            <ul>
-                <li><strong>Stack:</strong> 
-                    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-                    <img src="https://img.shields.io/badge/Polars-CD7F32?style=flat-square&logo=polars&logoColor=white" alt="Polars">
-                    <img src="https://img.shields.io/badge/MLForecast-00A86B?style=flat-square" alt="MLForecast">
-                    <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" alt="MLflow">
-                    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle">
-                </li>
-                <li><strong>Objetivo:</strong> Mitigar falhas catastróficas de inventário (<em>stockouts</em>) e otimizar o giro de estoque (<em>Inventory Turnover Rate</em>) em cadeias de suprimentos complexas.</li>
-                <li><strong>Abordagem de Engenharia:</strong> Substituição de abordagens estatísticas lentas por pipelines modernos de processamento ultra veloz com <strong>Polars</strong>, tratando volumes massivos em formato colunar (Parquet). A modelagem preditiva foi construída sobre estruturas avançadas de gradiente boost (<strong>LightGBM + MLForecast</strong>), incorporando variáveis exógenas macroeconômicas e climáticas de alta frequência (via dados do INMET).</li>
-                <li><strong>Validação Pública &amp; Digital Twin:</strong> Para validar e testar a escalabilidade do ecossistema sem comprometer dados proprietários, desenvolvi e publiquei de forma pioneira um motor estocástico gerador de dados sintéticos complexos. O dataset foi adotado pela comunidade e encontra-se público para testes de Big Data.</li>
-                <li><strong>Resultado:</strong> Redução teórica de custos de armazenamento e otimização imediata da esteira logística de insumos.</li>
-                <li><strong>Links do Projeto:</strong> 
-                    <a href="https://github.com/rbalbinotti/smart-supply-chain-ai" target="_blank"><img src="https://img.shields.io/badge/GitHub-Smart_Supply_Chain_AI-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Code"></a> | 
-                    <a href="https://www.kaggle.com/datasets/robertobalbinotti/synthetic-grocery-data" target="_blank"><img src="https://img.shields.io/badge/Kaggle-Acessar_Dataset_Público-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Dataset"></a>
-                </li>
-            </ul>
-        </article>
-
-        <hr>
-
-        <article class="project-card">
-            <h3>2. Personalized Medicine: Diagnóstico por Deep Learning com Rigor Ético</h3>
-            <p><em>Classificação avançada de patologias em imagens médicas com foco em interpretabilidade e explicabilidade de algoritmos (XAI).</em></p>
-            <ul>
-                <li><strong>Stack:</strong> 
-                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow">
-                    <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white" alt="Keras">
-                    <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV">
-                    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-                </li>
-                <li><strong>Objetivo:</strong> Desenvolver sistemas de suporte à decisão clínica com alta acurácia diagnóstica e total transparência regulatória para contextos hospitalares ou de saúde integrados.</li>
-                <li><strong>Abordagem de Engenharia:</strong> Implementação de arquiteturas de Redes Neurais Convolucionais (<strong>CNNs customizadas</strong>) otimizadas via aceleração por hardware (NVIDIA CUDA). O grande diferencial do projeto está na camada de governança e ética: uso de técnicas de <strong>AI Explainability (SHAP e LIME)</strong> para mapear quais regiões exatas dos exames ou dos atributos clínicos pesaram na tomada de decisão da IA. Isso remove o problema de "caixa-preta", exigência crucial para validações regulatórias e auditorias internacionais (como as normas europeias de IA).</li>
-                <li><strong>Resultado:</strong> Modelagem preditiva com acurácia validada superior a 90% em cenários severos e total auditoria lógica das tomadas de decisão.</li>
-                <li><strong>Links do Projeto:</strong> 
-                    <a href="https://github.com/rbalbinotti/treat_cancer_keras" target="_blank"><img src="https://img.shields.io/badge/GitHub-Computer_Vision_for_Healthcare:_Cancer_Detection-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Code"></a>
-                </li>
-            </ul>
-        </article>
-
-        <hr>
-
-        <article class="project-card">
-            <h3>3. Event Analytics &amp; Management Dashboard: Alta Performance Server-Side</h3>
-            <p><em>Inteligência de negócios interativa para monitoramento de pipelines operacionais e auditoria financeira de alto giro.</em></p>
-            <ul>
-                <li><strong>Stack:</strong> 
-                    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-                    <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
-                    <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" alt="Plotly">
-                    <img src="https://img.shields.io/badge/Linux_BTRFS-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux Architecture">
-                </li>
-                <li><strong>Objetivo:</strong> Centralizar KPIs financeiros operacionais em tempo real para otimizar funis de conversão de negócios e mitigar custos operacionais latentes.</li>
-                <li><strong>Abordagem de Engenharia:</strong> Desenvolvimento em arquitetura modular de microsserviços com ETL desacoplado. Para garantir estabilidade e fluidez, utilizei estratégias avançadas de cache em memória no servidor (<code>@st.cache_data</code> e <code>@st.cache_resource</code>), permitindo que renderizações pesadas do <strong>Plotly</strong> carreguem instantaneamente na ponta, reduzindo a latência de rede e otimizando o consumo de RAM de infraestrutura em nuvem.</li>
-                <li><strong>Resultado:</strong> Visão executiva detalhada Month-over-Month (MoM) que permite a identificação imediata de gargalos transacionais, automação de agendas de eventos e detecção antecipada de anomalias de faturamento.</li>
-                <li><strong>Links do Projeto:</strong> 
-                    <a href="https://github.com/rbalbinotti/Site-Eventos" target="_blank"><img src="https://img.shields.io/badge/GitHub-Analytics_&_Dashboard-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Code"></a> | 
-                    <a href="https://site-eventos.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit App"></a>
-                </li>
-            </ul>
-        </article>
-    </section>
-
-    <hr>
-
-    <section id="contributions">
-        <h3>📊 Contribuições para a Comunidade Data Science &amp; Open Source</h3>
-        <ul>
-            <li><strong>Synthetic Grocery Supply Chain Dataset (Kaggle):</strong> Desenvolvi e publiquei de forma aberta um simulador estocástico baseado em distribuições estatísticas reais combinadas a dados climáticos públicos. O projeto atua como um gerador de <em>Digital Twins</em> para simular dados transacionais de redes de suprimentos corporativas, facilitando o teste e o estresse de arquiteturas de Big Data sem quebrar conformidades legais de privacidade.</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="contact">
-        <h3>📬 Vamos Conversar?</h3>
-        <p>Se você busca um parceiro estratégico com sólida maturidade de negócios para escalar projetos de inteligência analítica e IA do ambiente de desenvolvimento direto à produção:</p>
+    <main class="max-w-4xl mx-auto px-6 py-12">
         
-        <div class="contact-links">
-            <a href="https://linkedin.com/in/roberto-balbinotti" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-            <a href="https://github.com/rbalbinotti" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-            <a href="https://www.kaggle.com/robertobalbinotti" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"></a>
-        </div>
-    </section>
+        <!-- Sobre Mim -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">🧬 Sobre Mim</h2>
+            <p class="leading-relaxed mb-4">
+                Cientista de Dados Sênior e Arquiteto de Soluções de IA com mais de 20 anos de bagagem profissional na intersecção entre otimização de processos, lógica de negócios e sistemas preditivos de alta performance. Especialista no desenvolvimento de pipelines ponta a ponta que transcendem o ambiente de pesquisa laboratorial para operar de forma robusta e escalável em ambientes produtivos (MLOps).
+            </p>
+            <p class="leading-relaxed">
+                Diferente de abordagens puramente teóricas, domino o ciclo completo do dado: desde a ingestão massiva de fontes heterogêneas e otimização server-side até o deploy conteinerizado de redes neurais complexas, sempre focando na eliminação de gargalos analíticos e no retorno financeiro real sobre o projeto.
+            </p>
+        </section>
+
+        <!-- Matriz de Competências com badges -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-6">🛠️ Matriz de Competências (Stack 2026)</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg shadow overflow-hidden">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Categoria</th>
+                            <th class="py-3 px-4 text-left">Tecnologias Chave</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">IA &amp; Computação Visual</td>
+                            <td class="py-3 px-4">
+                                <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" class="inline-block mr-1 mb-1" alt="TensorFlow">
+                                <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white" class="inline-block mr-1 mb-1" alt="Keras">
+                                <img src="https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logo=yolo&logoColor=black" class="inline-block mr-1 mb-1" alt="YOLO">
+                                <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" class="inline-block mr-1 mb-1" alt="OpenCV">
+                                <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" class="inline-block mr-1 mb-1" alt="Scikit-Learn">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Data Performance &amp; Big Data</td>
+                            <td class="py-3 px-4">
+                                <img src="https://img.shields.io/badge/Polars-CD7F32?style=flat-square&logo=polars&logoColor=white" class="inline-block mr-1 mb-1" alt="Polars">
+                                <img src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white" class="inline-block mr-1 mb-1" alt="Julia">
+                                <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" class="inline-block mr-1 mb-1" alt="Spark">
+                                <img src="https://img.shields.io/badge/Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=black" class="inline-block mr-1 mb-1" alt="Hadoop">
+                                <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" class="inline-block mr-1 mb-1" alt="SQL">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Forecasting &amp; Time Series</td>
+                            <td class="py-3 px-4">
+                                <img src="https://img.shields.io/badge/Nixtla-000000?style=flat-square" class="inline-block mr-1 mb-1" alt="Nixtla">
+                                <img src="https://img.shields.io/badge/MLForecast-00A86B?style=flat-square" class="inline-block mr-1 mb-1" alt="MLForecast">
+                                <img src="https://img.shields.io/badge/Sktime-1f425f?style=flat-square" class="inline-block mr-1 mb-1" alt="Sktime">
+                                <img src="https://img.shields.io/badge/LightGBM-333333?style=flat-square" class="inline-block mr-1 mb-1" alt="LightGBM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">DevOps, Cloud &amp; MLOps</td>
+                            <td class="py-3 px-4">
+                                <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" class="inline-block mr-1 mb-1" alt="MLflow">
+                                <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" class="inline-block mr-1 mb-1" alt="Docker">
+                                <img src="https://img.shields.io/badge/DVC-945DD6?style=flat-square&logo=dvc&logoColor=white" class="inline-block mr-1 mb-1" alt="DVC">
+                                <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" class="inline-block mr-1 mb-1" alt="AWS">
+                                <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" class="inline-block mr-1 mb-1" alt="Linux">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Projetos Estratégicos -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-8">🏗️ Projetos Estratégicos</h2>
+
+            <div class="space-y-8">
+                <!-- Projeto 1: Smart Supply Chain AI -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">1. Smart Supply Chain AI: Motor Preditivo de Demanda &amp; Geração Estocástica de Dados</h3>
+                    <p class="text-gray-600 mb-4 italic">Integração de modelagem preditiva de séries temporais de alta performance e engenharia de dados colunares aplicados à cadeia de suprimentos.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Stack:</strong> 
+                            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" class="inline-block mr-1" alt="Python">
+                            <img src="https://img.shields.io/badge/Polars-CD7F32?style=flat-square&logo=polars&logoColor=white" class="inline-block mr-1" alt="Polars">
+                            <img src="https://img.shields.io/badge/MLForecast-00A86B?style=flat-square" class="inline-block mr-1" alt="MLForecast">
+                            <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" class="inline-block mr-1" alt="MLflow">
+                            <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white" class="inline-block" alt="Kaggle">
+                        </li>
+                        <li><strong>Objetivo:</strong> Mitigar falhas catastróficas de inventário (<em>stockouts</em>) e otimizar o giro de estoque em cadeias de suprimentos complexas.</li>
+                        <li><strong>Abordagem:</strong> Substituição de abordagens estatísticas lentas por pipelines modernos com <strong>Polars</strong> e modelagem preditiva com <strong>LightGBM + MLForecast</strong>, incorporando variáveis exógenas macroeconômicas e climáticas de alta frequência.</li>
+                        <li><strong>Validação Pública:</strong> Desenvolvimento e publicação de um motor estocástico gerador de dados sintéticos complexos, adotado pela comunidade para testes de Big Data.</li>
+                        <li><strong>Resultado:</strong> Redução teórica de custos de armazenamento e otimização da esteira logística de insumos.</li>
+                        <li><strong>Links:</strong> 
+                            <a href="https://github.com/rbalbinotti/smart-supply-chain-ai" target="_blank" class="inline-block mr-2"><img src="https://img.shields.io/badge/GitHub-Smart_Supply_Chain_AI-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+                            <a href="https://www.kaggle.com/datasets/robertobalbinotti/synthetic-grocery-data" target="_blank"><img src="https://img.shields.io/badge/Kaggle-Dataset_Público-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Dataset"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Projeto 2: Personalized Medicine -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">2. Personalized Medicine: Diagnóstico por Deep Learning com Rigor Ético</h3>
+                    <p class="text-gray-600 mb-4 italic">Classificação avançada de patologias em imagens médicas com foco em interpretabilidade e explicabilidade de algoritmos (XAI).</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Stack:</strong> 
+                            <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" class="inline-block mr-1" alt="TensorFlow">
+                            <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white" class="inline-block mr-1" alt="Keras">
+                            <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" class="inline-block mr-1" alt="OpenCV">
+                            <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" class="inline-block" alt="Docker">
+                        </li>
+                        <li><strong>Objetivo:</strong> Desenvolver sistemas de suporte à decisão clínica com alta acurácia diagnóstica e total transparência regulatória.</li>
+                        <li><strong>Abordagem:</strong> CNNs customizadas aceleradas por CUDA e uso de <strong>AI Explainability (SHAP e LIME)</strong> para mapear regiões de decisão, removendo o problema de "caixa-preta" e atendendo a exigências regulatórias.</li>
+                        <li><strong>Resultado:</strong> Acurácia validada superior a 90% em cenários severos com total auditoria das tomadas de decisão.</li>
+                        <li><strong>Link:</strong> 
+                            <a href="https://github.com/rbalbinotti/treat_cancer_keras" target="_blank"><img src="https://img.shields.io/badge/GitHub-Cancer_Detection-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Projeto 3: Event Analytics Dashboard -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold mb-2">3. Event Analytics &amp; Management Dashboard: Alta Performance Server-Side</h3>
+                    <p class="text-gray-600 mb-4 italic">Inteligência de negócios interativa para monitoramento de pipelines operacionais e auditoria financeira de alto giro.</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Stack:</strong> 
+                            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" class="inline-block mr-1" alt="Python">
+                            <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" class="inline-block mr-1" alt="Streamlit">
+                            <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" class="inline-block mr-1" alt="Plotly">
+                            <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" class="inline-block" alt="Linux">
+                        </li>
+                        <li><strong>Objetivo:</strong> Centralizar KPIs financeiros operacionais em tempo real para otimizar funis de conversão e mitigar custos latentes.</li>
+                        <li><strong>Abordagem:</strong> Arquitetura modular de microsserviços com ETL desacoplado e estratégias avançadas de cache em memória (<code>@st.cache_data</code>), reduzindo latência e consumo de RAM.</li>
+                        <li><strong>Resultado:</strong> Visão executiva Month-over-Month com identificação imediata de gargalos transacionais e detecção antecipada de anomalias de faturamento.</li>
+                        <li><strong>Links:</strong> 
+                            <a href="https://github.com/rbalbinotti/Site-Eventos" target="_blank" class="inline-block mr-2"><img src="https://img.shields.io/badge/GitHub-Analytics_&_Dashboard-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"></a>
+                            <a href="https://site-eventos.streamlit.app/" target="_blank"><img src="https://img.shields.io/badge/Streamlit-App_Live-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit App"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contribuições para a Comunidade -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4">📊 Contribuições para a Comunidade Data Science &amp; Open Source</h2>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <ul class="list-disc ml-5 space-y-2">
+                    <li><strong>Synthetic Grocery Supply Chain Dataset (Kaggle):</strong> Desenvolvi e publiquei de forma aberta um simulador estocástico baseado em distribuições estatísticas reais combinadas a dados climáticos públicos. O projeto atua como um gerador de <em>Digital Twins</em> para simular dados transacionais de redes de suprimentos corporativas, facilitando o teste e o estresse de arquiteturas de Big Data sem quebrar conformidades legais de privacidade.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="text-center bg-gray-100 p-8 rounded-2xl shadow-inner">
+            <h2 class="text-2xl font-bold mb-6">📬 Vamos conversar?</h2>
+            <p class="mb-6 text-gray-700">Se você busca um parceiro estratégico com sólida maturidade de negócios para escalar projetos de inteligência analítica e IA do ambiente de desenvolvimento direto à produção:</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://linkedin.com/in/roberto-balbinotti" target="_blank" class="flex items-center bg-[#0077B5] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/rbalbinotti" target="_blank" class="flex items-center bg-[#333] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+                <a href="https://www.kaggle.com/robertobalbinotti" target="_blank" class="flex items-center bg-[#20BEFF] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-kaggle mr-2"></i> Kaggle
+                </a>
+                <a href="https://wa.me/5551920018268" target="_blank" class="flex items-center bg-[#25D366] text-white px-4 py-2 rounded-lg hover:opacity-80 transition">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        &copy; 2026 Roberto Balbinotti. Todos os direitos reservados.
+    </footer>
 
 </body>
 </html>
